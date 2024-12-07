@@ -37,17 +37,14 @@ Adding Different Calls with the type of body passed:
 <b>6. POST : Add Customer with Account</b>
 
   curl --location --request POST 'localhost:8080/addAccCustomer' \
-  --header 'Content-Type: application/json' \
-  --data-raw '{
-      "email": "xyz@gmail.com ",
-      "phoneNumber": "12345",
-      "name": "Tushar",
-      "age": 11,
-      "account": [{
-          "accountType": "SAVINGS",
-         "balance": 100
-      }]  
-  }'
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "email": "xyz@gmail.com ",
+  "phoneNumber": "12345",
+  "name": "Tushar",
+  "age": 11,
+  "account": [{ "accountType": "SAVINGS", "balance": 100 }]
+}'
   
   
 <b>7. GET : Get Account by Id</b>
